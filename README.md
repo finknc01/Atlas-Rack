@@ -2,6 +2,17 @@
 
 > **Operation Atlas — design an AI rack that looks great on a diagram, then keep redesigning it until power, cooling, cabling, serviceability, and failure reality all agree.**
 
+## Project status
+
+| Field | Current state |
+|---|---|
+| **Status** | **Planned — initial requirements in Weeks 9–10; main campaign Weeks 19–20** |
+| **Current stage** | Campaign authored; no rack design, BOM, or capacity figure is presented as a completed engineering result |
+| **Lab environment** | Design/modeling project using cited vendor specifications and explicit assumptions |
+| **Evidence rule** | Rack, power, thermal, and hardware values must be labeled vendor-specified, calculated, assumed, or modeled; none imply physical deployment |
+| **Last plan sync** | 2026-08-19 |
+| **License** | No open-source license is granted unless an explicit license is added later |
+
 ## Skills you will build
 
 - Rack units, server density, and physical layout
