@@ -1,0 +1,45 @@
+# Starter catalog schema. Populate exact model names/specifications during the lab
+# from cited public vendor documentation. Blank fields are intentional.
+components:
+  compute_node:
+    model: null
+    rack_units: null
+    gpu_count: null
+    max_power_w: null
+    typical_power_w: null
+    weight_kg: null
+    power_inputs: null
+    network_ports: []
+    management_ports: []
+    cooling_mode: null
+    source_url: null
+
+  top_of_rack_switch:
+    model: null
+    rack_units: null
+    max_power_w: null
+    weight_kg: null
+    port_count: null
+    port_speed: null
+    airflow_direction: null
+    source_url: null
+
+  management_switch:
+    model: null
+    rack_units: null
+    max_power_w: null
+    port_count: null
+    source_url: null
+
+  rack_pdu:
+    model: null
+    max_kw: null
+    input_voltage: null
+    phase: null
+    outlet_count: null
+    source_url: null
+
+rules:
+  - Use dated public specifications or clearly fictional values.
+  - Keep assumptions separate from vendor facts.
+  - Do not infer power, weight, cable, or cooling values when a source is available.
