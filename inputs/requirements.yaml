@@ -1,0 +1,45 @@
+scenario:
+  organization: Northstar Compute
+  project: Operation Atlas
+  objective: Design one deployable AI rack under changing facility constraints.
+
+rack:
+  usable_u: 48
+  max_weight_kg: 1500
+  front_service_clearance_required: true
+  rear_service_clearance_required: true
+
+compute:
+  target_gpu_count: 32
+  initial_compute_nodes: 4
+  growth_target_percent: 25
+
+power:
+  feeds: 2
+  redundancy_model: A-B
+  initial_rack_kw_limit: 40
+  sustained_utilization_target_percent: 80
+  require_single_feed_survival: true
+
+cooling:
+  initial_facility_mode: air
+  liquid_cooling_available: false
+  record_heat_rejection_assumptions: true
+
+network:
+  management_fabric: true
+  compute_fabric: true
+  storage_fabric: true
+  redundant_uplinks_required: true
+
+operations:
+  hot_swap_preferred: true
+  cable_serviceability_required: true
+  maintenance_without_full_rack_shutdown_preferred: true
+
+budget:
+  currency: USD
+  hard_cap: null
+
+# This is a fictional requirements packet. Later missions may deliberately
+# change constraints. Do not treat any number here as a vendor specification.
